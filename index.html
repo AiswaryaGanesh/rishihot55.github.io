@@ -9,21 +9,119 @@
 
         <title>Rishi Rajasekaran</title>
 
+        <!--
+            Learn what information 'meta' tags can contain. They are very important if you're making a site for an actual project. It specifies a lot of information that search engines use.
+        -->
         <meta name="author" content="Rishi Rajasekaran">
         <meta name="description" content="My personal site">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <!--
+            Always put stylesheets in-between the <head> and </head> tags. The design of the site should always be loaded before the content.
+        -->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="icon" type="image/png" href="img/favicon.png">
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+        <!--
+            If you notice, two of the stylesheets (normalize.css and main.css) are stored in a folder called css. They are stored along with the site. 
+
+            The other one (bootstrap.min.css) is being loaded from an external site (bootstrapcdn.com). 
+            Why you think it's being done like that?
+        -->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <!--
+            Javascript files can be loaded in the head tags and also at the end of the body tags. Read up on why it's being done like that.
+        -->
     </head>
     <body>
+        <!--
+            !!!IMPORTANT - PLEASE READ!!!
+            Great Job! Looks like you finally decided to read the source code instead of just looking at what the site looks like. 
+
+            If you're finding it hard to read on your browser, please copy the following URL into a new tab and read the code side by side with the web page:
+            https://github.com/rishihot55/rishihot55.github.io/blob/master/index.html
+
+            I'm assuming that you've read the basics of HTML5 to directly identify most of these tags.        
+            So, let me make a checklist of what tags you're seeing (in order of appearance):
+            1. html
+            2. head
+            3. title
+            4. meta
+            5. link
+            6. script
+            7. body
+            8. h1
+            9. h2
+            10. h3
+            11. p
+            12. section - a semantic tag which specifies that the content in it is a part of a separate section.
+            13. div
+            14. span
+
+            If you don't understand what some of these tags are, please look them up.
+
+            
+            Please read each and every line of code. I've mentioned a lot of information that you might find informative, in case you didn't read about HTML5 thoroughly. 
+
+            Go back to the very first line i.e. the <html> tag and read it completely
+            !!!/IMPORTANT!!!
+        -->
+
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <p>Hello! Welcome to my personal page!</p>
+        <!--
+            !!!IMPORTANT!!!
+            Tags like 'header' and 'section' don't actually have any CSS properties by default. 
+            Why do you think they added these new tags in the HTML5 specifications?
+            !!!/IMPORTANT!!!
+        -->
+        <header class='page-header text-center'>
+                <h1>A sample frontend page.</h1>
+                <p><a href='https://github.com/rishihot55/rishihot55.github.io/blob/master/index.html'>Source Code for the page</a></p>        
+        </header>
+        <div class='container'>
+        <!--
+            !!!IMPORTANT!!!
+            Here's an interesting thing about the names of the CSS classes that Bootstrap uses.
+            All of them do exactly what they advertise
+            
+            Take for example,'text-center'. It does what it says i.e. centers the text.
+
+            Q: Why do they not call the css class 'center' instead of 'text-center'?
+            .
+            .
+            .
+            .
+            .
+            .
+            .
+            Ans: Because things like 'left', 'right' and 'center' do not apply only to text. I can center an image or center some items on a navigation bar. You cannot use the same set of properties for different things.
+            It's just like why you cant 'turn' a car the same way as you 'turn' a bike - a car does not have a handlebar.
+
+            Hence an important coding practice is illustrated here - being specific about what you're typing.
+            !!!/IMPORTANT!!!
+        -->
+            <section>
+                <h2 class='text-center'>Hello.</h2>
+                <p>I guess you're just wondering why this site contains very little info. Well, put simply, we don't want you guys to copy a style to use verbatim for the inductions task. We'd want you guys to come up with your own designs and ideas.</p>
+            </section>
+            <section>
+                <h2 class='text-center'>Oh well.</h2>
+                <p>It's a bit harsh to just give no hints to you guys. So, let me give you guys a suggestion. Try out the following on your browser:</p>
+                <h3 class='text-center'><span class='label label-default'>F12</span></h3> 
+                <p class='text-center'>or</p>
+                <h3 class='text-center'><span class='label label-default'> Ctrl </span> + <span class='label label-default'> Shift </span> + <span class='label label-default'>C</span></h3>
+                <p class='text-center'>or</p>
+                <p class='text-center'>Right click on the page and click on <strong>'Developer Tools' / 'View page source'</strong>.</p>
+            </section>
+            <section>
+                <h2 class='text-center'>Full Disclosure</h2>
+                <p>I used a CSS library called Bootstrap which saves a lot of time in creating layouts for webpages. I suggest you learn one of the following - <em>Bootstrap</em>, <em>Pure</em>, <em>Materialize</em>, <em>Foundation</em>. But for now, it's not needed. Most of our tasks won't test your knowledge of CSS or Javascript, <em>unless it's explicitly mentioned.</em></p>
+            </section>
+        </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
